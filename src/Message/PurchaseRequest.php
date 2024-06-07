@@ -114,6 +114,7 @@ class PurchaseRequest extends AbstractRequest
             'billingstreet' => $address['Address2'],
             'billingtown' => $address['City'],
             'billingpostcode' => $address['Postcode'],
+            'billingcountryiso2a' => $address['Country'],
         ];
 
         return array_merge($data, $billing);
@@ -151,6 +152,7 @@ class PurchaseRequest extends AbstractRequest
             'Address2',
             'City',
             'Postcode',
+            'Country',
             'Email',
             'Phone',
         ];
