@@ -1,10 +1,10 @@
 <?php
 
-namespace Omnipay\TrustPayment;
+namespace Omnipay\TrustPayments;
 
 use Omnipay\Common\AbstractGateway;
-use Omnipay\TrustPayment\Message\PurchaseRequest;
-use Omnipay\TrustPayment\Traits\GatewayParamsTrait;
+use Omnipay\TrustPayments\Message\PurchaseRequest;
+use Omnipay\TrustPayments\Traits\GatewayParamsTrait;
 
 /**
  * @method \Omnipay\Common\Message\NotificationInterface acceptNotification(array $options = array())
@@ -32,7 +32,7 @@ class Gateway extends AbstractGateway
      */
     public function getName()
     {
-        return 'TrustPayment';
+        return 'TrustPayments';
     }
 
     /**

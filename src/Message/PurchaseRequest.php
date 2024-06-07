@@ -1,10 +1,10 @@
 <?php
 
-namespace Omnipay\TrustPayment\Message;
+namespace Omnipay\TrustPayments\Message;
 
 use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\Common\Message\ResponseInterface;
-use Omnipay\TrustPayment\Traits\GatewayParamsTrait;
+use Omnipay\TrustPayments\Traits\GatewayParamsTrait;
 
 class PurchaseRequest extends AbstractRequest
 {

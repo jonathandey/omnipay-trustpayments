@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\TrustPayment\Traits;
+namespace Omnipay\TrustPayments\Traits;
 
 trait GatewayParamsTrait
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\TrustPayment\Message;
+namespace Omnipay\TrustPayments\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
