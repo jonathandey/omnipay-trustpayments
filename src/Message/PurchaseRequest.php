@@ -60,9 +60,9 @@ class PurchaseRequest extends AbstractRequest
 
     public function generateSiteSecurity(array $data)
     {
-        $hashString = 'h' . implode('', $data);
+        $hashString = implode('', $data);
 
-        return hash('sha256', $hashString);
+        return 'h' . hash('sha256', $hashString);
     }
 
     public function setCurrencyiso3a($value)
