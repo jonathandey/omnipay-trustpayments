@@ -49,6 +49,8 @@ class Response extends AbstractResponse implements RedirectResponseInterface
                     'orderreference',
                     'successfulurlredirect',
                     'declinedurlredirect',
+                    'sitesecuritytimestamp',
+                    'ruleidentifier',
                 ]
             )
         );

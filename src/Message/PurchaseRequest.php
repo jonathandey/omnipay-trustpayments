@@ -32,11 +32,13 @@ class PurchaseRequest extends AbstractRequest
             'currencyiso3a' => $this->getCurrencyiso3a(),
             'mainamount' => $this->getMainamount(),
             'sitesecurity' => $this->generateSiteSecurity($this->getSiteSecurityData()),
+            'sitesecuritytimestamp' => date('Y-m-d H:i:s'),
             'version' => $this->getVersion(),
             'stprofile' => $this->getStprofile(),
             'orderreference' => $this->getTransactionId(),
             'successfulurlredirect' => $this->getReturnUrl(),
             'declinedurlredirect' => $this->getCancelUrl(),
+            'ruleidentifier' => 'STR-6',
         ];
 
         $data = array_merge($data, $this->getBillingAddressData($data));
